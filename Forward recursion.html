@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/main%20page.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward recursion</title>
+    <style> 
+    
+    div{
+        background-color: aquamarine;
+        text-align: center;
+        padding:10px
+
+    }
+    div:hover{
+        color:red
+    }
+    h3{
+        font-size: 40px;
+    }
+    #cas{
+        background-color: black;
+        color:antiquewhite
+        
+    }
+h6{
+    font-size: 35px;
+    padding: 10px;
+    width: auto;
+    color: rgb(240, 122, 12);
+    background-color: linen;
+    margin: 1px;
+}
+*{
+    text-decoration: none;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1><a href="http://127.0.0.1:5500/main%20page.html#">FORWARD RECURSION
+            </a></h1>
+            <h2>-DYNAMIC PROGRAMMING</h2>
+    </div>
+    <h3>
+        DYNAMIC PROGRAMMING</h3>
+    
+<ul>
+<li style="font-size: 30px; margin: 10px;">Dynamic programming is a recursive optimization procedure which means it is a procedure which optimizes step by step basis using information from the preceding steps
+</li>
+<li style="font-size: 30px; margin: 10px">
+The two basic approaches for solving dynamic programming are:
+</li>
+</ul>
+<p style="margin-left: 50px;font-size: 30px; padding: 0px;">
+    -Forward recursion
+
+</p>
+<p style="margin-left: 50px; font-size: 30px;">
+    -Backward recursion
+
+</p>
+    <h6>
+Forward recursion</h6>
+<p>
+    </p><ul>
+        <li style="font-size: 30px;">A total of 6 units of water is to be allocated optimally to three users. The
+            allocation is made in discrete steps of one unit ranging from 0 to 6. With the
+            three users denoted as User 1, User 2 and User 3 respectively, the returns
+            obtained from the users for a given allocation are given in the following table.
+          
+        </li>
+    </ul>
+
+  <img src="./Forward recursion_files/Screenshot 1.png">
+  <ul>
+      <li>
+        <p style="font-size: 30px;">In forward recursion the solution starts from the first user,
+            User 1, and proceeds in the forward direction to the third user, User 3. At
+            every stage in the forward recursion, we look backward to obtain optimal
+            solutions from the other stages that have already been solved.</p>
+      </li>
+  </ul>
+  <img src="./Forward recursion_files/Screenshot 2.png">
+  <img src="./Forward recursion_files/Screenshot (3).png">
+
+  <img src="./Forward recursion_files/Screenshot (4).png" style="margin-left: 80px;">
+  <br>
+
+  
+  <img src="./Forward recursion_files/Screenshot (5).png" style="margin-left: 80px;">
+  <br>
+  <img src="./Forward recursion_files/Screenshot (6).png" style="margin-left: 80px; margin-bottom: 0px;padding: 0px;">
+  <br>
+  <img src="./Forward recursion_files/Screenshot (8).png" style="margin-left: 83px; margin-top: 0px; padding:0px">
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
